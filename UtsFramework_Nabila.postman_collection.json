@@ -1,0 +1,532 @@
+{
+	"info": {
+		"_postman_id": "50d23061-0ca4-49d2-a8de-55afb684fa50",
+		"name": "UtsFramework_Nabila",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34069132"
+	},
+	"item": [
+		{
+			"name": "login",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbmFiaWxhLndlYmZyYW1ld29yay5teS5pZC9hcGkvcmVnaXN0ZXIiLCJpYXQiOjE3MTYxOTI5MzAsImV4cCI6MTcxNjE5NjUzMCwibmJmIjoxNzE2MTkyOTMwLCJqdGkiOiIwTFo3Y1dBVTdwNlFLT0E4Iiwic3ViIjoiNyIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.D8UazWQDTxqFxheBjPpToWJnpTRq-efZzDvOPCQPSEk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"admin@mail.com\",\r\n    \"password\": \"admin\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://nabila.webframework.my.id/api/login",
+					"protocol": "https",
+					"host": [
+						"nabila",
+						"webframework",
+						"my",
+						"id"
+					],
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Nabila Febiana\",\r\n    \"email\": \"bila5@gmail.com\",\r\n    \"password\": \"password\",\r\n    \"password_confirmation\": \"password\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://nabila.webframework.my.id/api/register",
+					"protocol": "https",
+					"host": [
+						"nabila",
+						"webframework",
+						"my",
+						"id"
+					],
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add categories",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbmFiaWxhLndlYmZyYW1ld29yay5teS5pZC9hcGkvbG9naW4iLCJpYXQiOjE3MTYxOTI5MTEsImV4cCI6MTcxNjE5NjUxMSwibmJmIjoxNzE2MTkyOTExLCJqdGkiOiJpUGRGOVZ3cjFzeGNhTE13Iiwic3ViIjoiMSIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.h1El2pNQgQqgq1xM7nn9WaM-N7QrpBCGMronuPi0YIA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"perhiasan\"  \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://nabila.webframework.my.id/api/categories",
+					"protocol": "https",
+					"host": [
+						"nabila",
+						"webframework",
+						"my",
+						"id"
+					],
+					"path": [
+						"api",
+						"categories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add category all",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbmFiaWxhLndlYmZyYW1ld29yay5teS5pZC9hcGkvbG9naW4iLCJpYXQiOjE3MTYxOTI5MTEsImV4cCI6MTcxNjE5NjUxMSwibmJmIjoxNzE2MTkyOTExLCJqdGkiOiJpUGRGOVZ3cjFzeGNhTE13Iiwic3ViIjoiMSIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.h1El2pNQgQqgq1xM7nn9WaM-N7QrpBCGMronuPi0YIA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://nabila.webframework.my.id/api/categories",
+					"protocol": "https",
+					"host": [
+						"nabila",
+						"webframework",
+						"my",
+						"id"
+					],
+					"path": [
+						"api",
+						"categories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "read category by id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbmFiaWxhLndlYmZyYW1ld29yay5teS5pZC9hcGkvbG9naW4iLCJpYXQiOjE3MTYxOTMzODYsImV4cCI6MTcxNjE5Njk4NiwibmJmIjoxNzE2MTkzMzg2LCJqdGkiOiJxOGdWUTJjbWJrdm51VVlHIiwic3ViIjoiMSIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.bgF4nTPL1WCtm4c2xePZNSh9PAvtN5fIrWCJWnh2ep0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://nabila.webframework.my.id/api/categories/4",
+					"protocol": "https",
+					"host": [
+						"nabila",
+						"webframework",
+						"my",
+						"id"
+					],
+					"path": [
+						"api",
+						"categories",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "edit category by id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbmFiaWxhLndlYmZyYW1ld29yay5teS5pZC9hcGkvbG9naW4iLCJpYXQiOjE3MTYxOTMzODYsImV4cCI6MTcxNjE5Njk4NiwibmJmIjoxNzE2MTkzMzg2LCJqdGkiOiJxOGdWUTJjbWJrdm51VVlHIiwic3ViIjoiMSIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.bgF4nTPL1WCtm4c2xePZNSh9PAvtN5fIrWCJWnh2ep0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"perhiasan baru\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://nabila.webframework.my.id/api/categories/4",
+					"protocol": "https",
+					"host": [
+						"nabila",
+						"webframework",
+						"my",
+						"id"
+					],
+					"path": [
+						"api",
+						"categories",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete category",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzE2MDMxOTI0LCJleHAiOjE3MTYwMzU1MjQsIm5iZiI6MTcxNjAzMTkyNCwianRpIjoiekV6ajhTVEs5UllHeG1UdyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.TTbtxwfFzCxo0wXNYfZr6y1Yw4pTIeHDMwEp93a68NQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://nabila.webframework.my.id/api/categories/4",
+					"protocol": "https",
+					"host": [
+						"nabila",
+						"webframework",
+						"my",
+						"id"
+					],
+					"path": [
+						"api",
+						"categories",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add product",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbmFiaWxhLndlYmZyYW1ld29yay5teS5pZC9hcGkvbG9naW4iLCJpYXQiOjE3MTYxOTMzODYsImV4cCI6MTcxNjE5Njk4NiwibmJmIjoxNzE2MTkzMzg2LCJqdGkiOiJxOGdWUTJjbWJrdm51VVlHIiwic3ViIjoiMSIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.bgF4nTPL1WCtm4c2xePZNSh9PAvtN5fIrWCJWnh2ep0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"gelang kaki\",\r\n    \"description\": \"Deskripsi produk baru\",\r\n    \"price\": 300000, // Harga produk dalam satuan mata uang (misalnya Rupiah) // URL gambar produk (opsional)\r\n    \"expired_at\": \"2024-12-31\", // Tanggal kadaluarsa produk (opsional)\r\n    \"category_id\": 4\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://nabila.webframework.my.id/api/products",
+					"protocol": "https",
+					"host": [
+						"nabila",
+						"webframework",
+						"my",
+						"id"
+					],
+					"path": [
+						"api",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "edit product",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbmFiaWxhLndlYmZyYW1ld29yay5teS5pZC9hcGkvbG9naW4iLCJpYXQiOjE3MTYxOTMzODYsImV4cCI6MTcxNjE5Njk4NiwibmJmIjoxNzE2MTkzMzg2LCJqdGkiOiJxOGdWUTJjbWJrdm51VVlHIiwic3ViIjoiMSIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.bgF4nTPL1WCtm4c2xePZNSh9PAvtN5fIrWCJWnh2ep0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Example Product\",\r\n    \"description\": \"This is an example product\",\r\n    \"price\": 200.0,\r\n    \"category_id\": 4\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://nabila.webframework.my.id/api/products/1",
+					"protocol": "https",
+					"host": [
+						"nabila",
+						"webframework",
+						"my",
+						"id"
+					],
+					"path": [
+						"api",
+						"products",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "read product by id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbmFiaWxhLndlYmZyYW1ld29yay5teS5pZC9hcGkvbG9naW4iLCJpYXQiOjE3MTYxOTMzODYsImV4cCI6MTcxNjE5Njk4NiwibmJmIjoxNzE2MTkzMzg2LCJqdGkiOiJxOGdWUTJjbWJrdm51VVlHIiwic3ViIjoiMSIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.bgF4nTPL1WCtm4c2xePZNSh9PAvtN5fIrWCJWnh2ep0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Nama Produk Baru\",\r\n    \"description\": \"Deskripsi produk baru\",\r\n    \"price\": 200000, // Harga produk dalam satuan mata uang (misalnya Rupiah) // URL gambar produk (opsional)\r\n    \"expired_at\": \"2024-12-31\", // Tanggal kadaluarsa produk (opsional)\r\n    \"category_id\": 4\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://nabila.webframework.my.id/api/products/1",
+					"protocol": "https",
+					"host": [
+						"nabila",
+						"webframework",
+						"my",
+						"id"
+					],
+					"path": [
+						"api",
+						"products",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete produk",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzE2MDMxOTI0LCJleHAiOjE3MTYwMzU1MjQsIm5iZiI6MTcxNjAzMTkyNCwianRpIjoiekV6ajhTVEs5UllHeG1UdyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.TTbtxwfFzCxo0wXNYfZr6y1Yw4pTIeHDMwEp93a68NQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://nabila.webframework.my.id/api/products/1",
+					"protocol": "https",
+					"host": [
+						"nabila",
+						"webframework",
+						"my",
+						"id"
+					],
+					"path": [
+						"api",
+						"products",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "google get token jwt",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "tokenName",
+							"value": "utsbila",
+							"type": "string"
+						},
+						{
+							"key": "grant_type",
+							"value": "authorization_code",
+							"type": "string"
+						},
+						{
+							"key": "clientSecret",
+							"value": "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",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "480817416236-urishgl3rsnkvlbc7vahg4mg5g8b7qd1.apps.googleusercontent.com",
+							"type": "string"
+						},
+						{
+							"key": "headerPrefix",
+							"value": "",
+							"type": "string"
+						},
+						{
+							"key": "client_authentication",
+							"value": "body",
+							"type": "string"
+						},
+						{
+							"key": "scope",
+							"value": "https://www.googleapis.com/auth/userinfo.email",
+							"type": "string"
+						},
+						{
+							"key": "accessTokenUrl",
+							"value": "https://oauth2.googleapis.com/token",
+							"type": "string"
+						},
+						{
+							"key": "authUrl",
+							"value": "https://accounts.google.com/o/oauth2/v2/auth",
+							"type": "string"
+						},
+						{
+							"key": "useBrowser",
+							"value": true,
+							"type": "boolean"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://nabila.webframework.my.id/api/login/google/callback",
+					"protocol": "https",
+					"host": [
+						"nabila",
+						"webframework",
+						"my",
+						"id"
+					],
+					"path": [
+						"api",
+						"login",
+						"google",
+						"callback"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
